@@ -1,17 +1,18 @@
 .header {
-  margin: 92px 24px 96px 24px;
+  margin: 92px 24px 92px 24px;
 }
 
 .header__menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-left: 10px;
+  margin-left: 7px;
 }
 
 .header__links-list-item {
   display: flex;
-  gap: 31px;
+  gap: 33px;
+  margin-left: 18px;
   list-style-type: circle;
 }
 
@@ -22,7 +23,7 @@
 .header__link {
   font-size: 18px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 25px;
 }
 
 .header__link_active::before {
@@ -30,17 +31,14 @@
 }
 
 .header__logo {
-  margin-left: 15px;
-  margin-right: 193px;
-  
+  margin-right: 190px;
+  padding-left: 36px;
 }
 
 .header__logo-image {
   width: 148px;
   height: 105px;
-  
 }
-
 
 .header__address {
   display: flex;
@@ -48,8 +46,8 @@
   font-family: Raleway;
   font-weight: normal;
   font-style: normal;
+  margin-right: 61px;
 }
-
 
 .cover {
   background-image: url(../images//cover.jpg);
@@ -81,32 +79,39 @@
 
 .cover__title_text-one {
   font-size: 100px;
-  letter-spacing: 20px;
-
+  letter-spacing: 30px;
 }
 
+.no-letter-spacing-one {
+  margin-left: -23px;
+}
 
 .cover__title_text-two {
   font-size: 100px;
-  margin: 20px 410px 20px 260px;
-  letter-spacing: 35px;
+  margin: 9px 410px 4px 286px;
+  letter-spacing: 31px;
 }
+
+.no-letter-spacing-two {
+  margin-left: 27px;
+} 
 
 .cover__title_text-three {
   font-size: 100px;
   margin-left: 583px;
-  margin-bottom: 100px;
-  letter-spacing: 40px;
+  margin-bottom: 126px;
+  letter-spacing: 27px;
 }
 
-.no-letter-spacing {
-  letter-spacing: 80px;
-}
+.no-letter-spacing-three {
+  margin-left: 37px;
+  margin-right: 36px;
+} 
 
 .cover__description {
   display: flex;
   align-items: center;
-  padding: 0 50px 51px 79px;
+  padding: 0 50px 51px 81px;
 }
 
 .cover__description-text {
@@ -135,15 +140,15 @@
   z-index: 2; 
 }
 
-.lots{
+.lots {
   margin: 170px 24px 201px 24px;
-  gap: 25px
-  
+  gap: 25px;
 }
 
 .lots__heading {
-  padding-left: 40px;
-  padding-bottom: 19px;
+  padding-top: 178px;
+  padding-left: 64px;
+  padding-bottom: 27px;
   font-size: 40px;
   font-weight: 700;
   line-height: 47px;
@@ -153,14 +158,13 @@
 
 .lots__card-list {
   list-style: none;
-
 }
 
 .lots__container {
   display: flex;
   gap: 25px;
+  margin-left: 25px;
 }
-
 
 .card {
   display: flex;
@@ -171,7 +175,6 @@
   z-index: 1; 
   background: white;
   overflow: hidden; 
-  
 }
 
 .card::before {
@@ -202,12 +205,10 @@
 }
 
 .card__text {
-  padding: 220px 40px 48px 40px;
+  padding: 242px 40px 48px 40px;
   color: white;
   font-size: 20px;
   font-weight: 400;
-  
-  
 }
 
 .card-link {
@@ -229,7 +230,7 @@
 }
 
 .card__text-book {
-  padding: 5px 40px 48px 40px;
+  padding: 1px 40px 48px 40px;
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 400;
@@ -245,14 +246,14 @@
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 400;
-  padding: 100px 40px 48px 40px;
+  padding: 97px 40px 48px 40px;
 }
 
 .lots__look-more-link {
   color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: 400;
-  margin: 35px 102px 0px 20px;
+  margin: 31px 102px 0px 32px;
 }
 
 .about__title {
@@ -262,7 +263,7 @@
   line-height: 47px;
   text-align: left;
   text-transform: uppercase;
-  padding: 136px 396px 92px 359px;
+  padding: 282px 396px 97px 382px;
 }
 
 .about__text {
@@ -272,8 +273,21 @@
   text-align: left;
   padding: 2px 5px 0px 359px;
   height: 120px;
-  
 }
+
+.about__text-info-one {
+  line-height: 24px;
+  margin-left: 25px;
+  width: 90%;
+  margin-bottom: 25px;
+}
+
+.about__text-info-two {
+  line-height: 24px;
+  margin-left: 25px;
+  width: 94%;
+}
+
 
 .about__logo {
   width: 240px;
@@ -284,9 +298,8 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  margin-left: 47px;
-  margin-top: 35px;
-
+  margin-left: 70px;
+  margin-top: 181px;
 }
 
 .about__logo-image {
@@ -297,27 +310,28 @@
   align-items: center; 
 }
 
-
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 300px 50px 88px 50px;
+  padding: 378px 50px 88px 50px;
 }
 
-.address a {
+.address-footer-text {
   color: #000;
   text-decoration: underline;
   font-size: 18px;
 }
 
-.address p {
-  text-decoration: none;
-  font-size: 18px;
+.address-footer {
+  line-height: 23px;
+  margin-left: 1px;
 }
 
 .footer__menu {
   display: flex;
   align-items: center;
+  margin-bottom: 32px;
+  margin-left: 57px;
 }
 
 .footer__menu-list {
@@ -344,10 +358,7 @@
 .footer__social-list {
   list-style: none;
   display: flex;
-}
-
-.footer__social-list-item {
-  margin-right: 10px;
+  gap: 47px;
 }
 
 .footer__social-link {
@@ -356,13 +367,7 @@
 }
 
 .footer__social-icon {
-  margin-right: 30px;
   width: 48px;
   height: 48px;
   align-items: center;
 }
-
-
-
-
-
