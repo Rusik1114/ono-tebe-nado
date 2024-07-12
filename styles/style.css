@@ -43,7 +43,7 @@
 .header__address {
   display: flex;
   flex-direction: column;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: normal;
   font-style: normal;
   margin-right: 61px;
@@ -51,12 +51,12 @@
 
 .cover {
   background-image: url(../images//cover.jpg);
+  background-size: cover;
   background-position: center;
   position: relative;
-  overflow: hidden; 
 }
 
-.cover::before {
+.background-opacity::before {
   content: '';
   position: absolute;
   top: 0;
@@ -75,6 +75,7 @@
   font-weight: 700;
   padding: 165px 50px 0 50px;
   z-index: 1;
+  text-transform: uppercase;
 }
 
 .cover__title_text-one {
@@ -116,7 +117,7 @@
 
 .cover__description-text {
   color: rgb(255, 255, 255);
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
@@ -129,6 +130,7 @@
 .bet-button {
   color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0);
+  font-family: Raleway, sans-serif; 
   font-size: 22px;
   font-weight: 500;
   line-height: 26px;
@@ -167,6 +169,8 @@
 }
 
 .card {
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   width: 334px;
@@ -174,10 +178,9 @@
   position: relative;
   z-index: 1; 
   background: white;
-  overflow: hidden; 
 }
 
-.card::before {
+.background__opacity-card::before {
   content: '';
   position: absolute;
   top: 0;
@@ -250,10 +253,13 @@
 }
 
 .lots__look-more-link {
+  margin: 31px 65px
+}
+
+.lots__more-link {
   color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: 400;
-  margin: 31px 102px 0px 32px;
 }
 
 .about__title {
@@ -263,7 +269,7 @@
   line-height: 47px;
   text-align: left;
   text-transform: uppercase;
-  padding: 282px 396px 97px 382px;
+  padding: 252px 396px 97px 382px;
 }
 
 .about__text {
@@ -298,8 +304,8 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  margin-left: 70px;
-  margin-top: 181px;
+  margin-left: 71px;
+  margin-top: 151px;
 }
 
 .about__logo-image {
@@ -325,6 +331,8 @@
 .address-footer {
   line-height: 23px;
   margin-left: 1px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__menu {
